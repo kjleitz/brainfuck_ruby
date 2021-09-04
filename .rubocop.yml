@@ -2,11 +2,26 @@ AllCops:
   TargetRubyVersion: 2.7.3
   NewCops: enable
 
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
 Layout/LineLength:
-  Max: 120
+  Enabled: false
+
+Metrics/AbcSize:
+  CountRepeatedAttributes: false
+
+Metrics/ClassLength:
+  Max: 200
 
 Metrics/CyclomaticComplexity:
   Max: 15
+
+Metrics/MethodLength:
+  Max: 30
 
 Style/RescueModifier:
   Enabled: false
